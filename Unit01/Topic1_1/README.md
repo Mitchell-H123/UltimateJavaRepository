@@ -16,3 +16,13 @@ java Unit01.Topic1_1.Main
 ```
 
 Sorry about the more complicated syntax for running the code from the command line; it's a necessary Java thing if you're going to keep your code organized in a big repository like this.
+
+Notes:
+/* */ -comments
+java is class based
+class name must match the file name
+System.out.print("---"); - prints out whats in quotes and puts curser next to it
+System.out.println("---"); - prints out whats in quotes and puts curser below to it
+string literal = "any text between quotes"
+Syntax/Compiler errors = a program wont compile when the syntex has errors(typically easy to find)
+logic error = anticipated output vs actual output (EX: writing - instead of +)
