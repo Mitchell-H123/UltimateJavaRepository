@@ -6,7 +6,7 @@ public class Main {
      double testAvg=90;
      boolean sugar=true;
      final int tires=4;
-     System.out.println(marbles);
+     System.out.println(testAvg);
      System.out.println(tires);
      System.out.println(sugar);
   }

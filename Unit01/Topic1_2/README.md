@@ -14,4 +14,3 @@ final = something that wont change
 ex. final double PI;
 for final variables use ALL CAPS and underscores to name them
 the same as const in c++
-
