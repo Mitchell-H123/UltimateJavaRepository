@@ -13,6 +13,6 @@ same as x=x+7
 
 increment and decrement
 ++ and --
-x++, ++x
-x--, --x
+x++;, ++x;
+x--;, --x;
 
