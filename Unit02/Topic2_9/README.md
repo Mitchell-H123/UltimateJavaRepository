@@ -23,3 +23,6 @@ Math.random()
 -then use addition to change range
 -addition is used to select the lowest value possible
 
+EX:
+(int)(Math.random()*(max-min+1))-min;
+-this gets the range to be from the min to the max
