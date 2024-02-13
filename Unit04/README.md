@@ -32,4 +32,9 @@ must test many examples to make sure loop works correctly with wished output
 
 ## 4.4 - Nested Iteration
 
+already knew this
+inner loops go then outer go
+
 ## 4.5 - Informal Code Analysis
+
+this is just figuring out how many times a loop will run
