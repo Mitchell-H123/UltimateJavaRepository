@@ -45,23 +45,68 @@ public class StringLoops {
     }
 
     public static String doubleChar(String str) {
-        return "";
+        String s="";
+        String letter;
+        for(int i=0;i<str.length();i++){
+            if(i<str.length()-1){
+                letter=str.substring(i, i+1);
+                s=s+letter+letter;
+            }
+            else{
+                letter=str.substring(i);
+                s=s+letter+letter;
+            }
+        }
+        return s;
     }
 
     public static int countCode(String str) {
-        return 0;
+        int count=0;
+        for(int i=0;i<str.length()-3;i++){
+            if(str.substring(i, i+1).equals("c")){
+                if((str.substring(i+1,i+2).equals("o"))&&(str.substring(i+3,i+4).equals("e"))){
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 
     public static boolean bobThere(String str) {
-        return false;
+        boolean bob=false;
+        for(int i=0;i<str.length()-2;i++){
+            if(str.substring(i, i+1).equals("b")){
+                if(str.substring(i+2, i+3).equals("b")){
+                    bob=true;
+                    break;
+                }
+            }
+        }
+        return bob;
     }
 
     public static boolean prefixAgain(String str, int n) {
-        return false;
+        boolean again=false;
+        String a=str.substring(0, n);;
+        for(int i=n;i<str.length()-n + 1;i++){
+            if(str.substring(i, i+n).equals(a)){
+                again=true;
+                break;
+            }
+        }
+        return again;
     }
 
     public static boolean sameStarChar(String str) {
-        return false;
+        boolean same=false;
+        for(int i=1;i<str.length()-1;i++){
+            if(str.substring(i, i+1).equals("*")){
+                if(str.substring(i-1,i).equals(str.substring(i+1,i+2))){
+                    same=true;
+                }
+            }
+        }
+        return same;
     }
 
     public static String starOut(String str) {
@@ -95,4 +140,5 @@ public class StringLoops {
     public static String repeatSeparator(String word, String sep, int count) {
         return "";
     }
+
 }
