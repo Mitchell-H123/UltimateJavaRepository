@@ -99,30 +99,97 @@ public class StringLoops {
 
     public static boolean sameStarChar(String str) {
         boolean same=false;
-        for(int i=1;i<str.length()-1;i++){
-            if(str.substring(i, i+1).equals("*")){
-                if(str.substring(i-1,i).equals(str.substring(i+1,i+2))){
-                    same=true;
-                }
+        if(str.length()!=0){
+            for(int i=1;i<str.length()-1;i++){
+                if(str.substring(i, i+1).equals("*")){
+                    if(str.substring(i-1,i).equals(str.substring(i+1,i+2))){
+                        same=true;
+                  }
+                  else{
+                    same=false;
+                  }
+             }
             }
         }
+        else{
+            same=true;
+        }
+        if(str.contains("*")==false){
+            same=true;
+        }
+        String stars="";
+        for(int j=0;j<str.length();j++){
+            stars=stars+"*";
+        }
+        if(str.substring(0).equals(stars)){
+            same=true;
+        }
+
         return same;
     }
 
     public static String starOut(String str) {
-        return "";
+        //fix later
+        String x="";
+        if(str.length()!=0){
+            for(int i=0;i<str.length();i++){
+                if(i==str.length()-1){
+                    if((str.substring(i).equals("*"))==false){
+                        x=x+str.substring(i);
+                    }
+                }
+                else{
+                    if((str.substring(i,i+1).equals("*"))==false){
+                        x=x+str.substring(i,i+1);
+                    }
+                }
+            }
+        }
+        return x;
     }
 
     public static int countHi(String str) {
-        return 0;
+        int count=0;
+        for(int i=0;i<str.length()-1;i++){
+            if(str.length()!=0){
+                if(str.substring(i, i+2).equals("hi")){
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 
     public static boolean endOther(String a, String b) {
-        return false;
+        boolean end=false;
+        a=a.toLowerCase();
+        b=b.toLowerCase();
+        if(a.length()>b.length()){
+            int num=a.length()-b.length();
+            if(a.substring(num).equals(b)){
+                end=true;
+            }
+        }
+        else{
+            int num=b.length()-a.length();
+            if(b.substring(num).equals(a)){
+                end=true;
+            }
+        }
+        return end;
     }
 
     public static boolean xyBalance(String str) {
-        return false;
+        boolean balance=false;
+        if(str.length()!=0){
+            for(int i=0;i<str.length();i++){
+                
+            }
+        }
+        else{
+            balance=true;
+        }
+        return balance;
     }
 
     public static String plusOut(String str, String word) {
