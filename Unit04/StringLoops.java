@@ -128,8 +128,7 @@ public class StringLoops {
         return same;
     }
 
-    public static String starOut(String str) {
-        //fix later
+    public static String starOut(String str) {//fix
         String x="";
         if(str.length()!=0){
             for(int i=0;i<str.length();i++){
@@ -138,10 +137,16 @@ public class StringLoops {
                         x=x+str.substring(i);
                     }
                 }
-                else{
-                    if((str.substring(i,i+1).equals("*"))==false){
+                else if(i==0){
+                    if((str.substring(i+1,i+2).equals("*"))==false){
                         x=x+str.substring(i,i+1);
                     }
+                }
+                else{
+                    if((str.substring(i+1,i+2).equals("*") || str.substring(i, i+1).equals("*") || str.substring(i-1, i).equals("*"))==false){
+                        x=x+str.substring(i,i+1);
+                    }
+                    
                 }
             }
         }
@@ -191,21 +196,88 @@ public class StringLoops {
         }
         return balance;
     }
-
+//fix
     public static String plusOut(String str, String word) {
-        return "";
+        String newword="";
+        for(int i=0;i<str.length()-word.length()-1;i++){
+            if(str.substring(i, word.length()).equals(word)){
+                newword=newword+word;
+            }
+            else{
+                newword=newword+"+";
+            }
+        }
+        return newword;
     }
-
+//fix
     public static boolean catDog(String str) {
-        return false;
+        int cat=0,dog=0;
+        boolean equal=false;
+        for(int i=0;i<str.length()-2;i++){
+            if(str.substring(i, i+3).equals("cat")){
+                cat++;
+            }
+            else if(str.substring(i,i+3).equals("dog")){
+                dog++;
+            }
+        }
+        if(cat==dog){
+            equal=true;
+        }
+        return equal;
     }
 
     public static String mixString(String a, String b) {
-        return "";
+        int turn=0,i=0;
+        String s="";
+        boolean go1=true,go2=true;
+        while(go1||go2){
+            if(turn==0){
+                if(i<a.length()-1){
+                    s=s+a.substring(i, i+1);
+                    turn=1;
+                }
+                else if(i==a.length()-1){
+                    s=s+a.substring(i);
+                    turn=1;
+                }
+                else{
+                    turn=1;
+                    go1=false;
+                }
+            }
+            else{
+                if(i<b.length()-1){
+                    s=s+b.substring(i, i+1);
+                    turn=0;
+                    i++;
+                }
+                else if(i==b.length()-1){
+                    s=s+b.substring(i);
+                    turn=0;
+                    i++;
+                }
+                else{
+                    turn=0;
+                    go2=false;
+                    i++;
+                }
+            }
+        }
+        return s;
     }
 
     public static String repeatSeparator(String word, String sep, int count) {
-        return "";
+        String s="";
+        for(int i=0;i<count;i++){
+            if(i==count-1){
+                s=s+word;
+            }
+            else{
+                s=s+word+sep;
+            }
+        }
+        return s;
     }
 
 }
