@@ -128,17 +128,24 @@ public class StringLoops {
         return same;
     }
 
-    public static String starOut(String str) {//fix
+    public static String starOut(String str) {
         String x="";
         if(str.length()!=0){
             for(int i=0;i<str.length();i++){
                 if(i==str.length()-1){
-                    if((str.substring(i).equals("*"))==false){
-                        x=x+str.substring(i);
+                    if(str.length()==1){
+                        if((str.substring(i).equals("*"))==false){
+                            x=x+str.substring(i);
+                        }
+                    }
+                    else{
+                        if(((str.substring(i).equals("*"))==false)&&(str.substring(i-1,i).equals("*")==false)){
+                            x=x+str.substring(i);
+                        }
                     }
                 }
                 else if(i==0){
-                    if((str.substring(i+1,i+2).equals("*"))==false){
+                    if((str.substring(i+1,i+2).equals("*")==false)&&(str.substring(i,i+1).equals("*")==false)){
                         x=x+str.substring(i,i+1);
                     }
                 }
@@ -186,9 +193,24 @@ public class StringLoops {
 
     public static boolean xyBalance(String str) {
         boolean balance=false;
+        int positionX,x=0,y=0,positionY;
+        String letter;
         if(str.length()!=0){
             for(int i=0;i<str.length();i++){
-                
+                if(i!=str.length()-1){
+                    letter=str.substring(i, i+1);
+                    if(letter.equals("x")){
+                        x++;
+                        positionX=i;
+                    }
+                    else if(letter.equals("y")){
+                        y++;
+                        positionY=i;
+                    }
+                }
+                else{
+
+                }
             }
         }
         else{
