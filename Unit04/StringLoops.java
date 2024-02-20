@@ -193,7 +193,7 @@ public class StringLoops {
 
     public static boolean xyBalance(String str) {
         boolean balance=false;
-        int positionX,x=0,y=0,positionY;
+        int positionX=0,x=0,y=0,positionY=0;
         String letter;
         if(str.length()!=0){
             for(int i=0;i<str.length();i++){
@@ -209,8 +209,30 @@ public class StringLoops {
                     }
                 }
                 else{
-
+                    letter=str.substring(i);
+                    if(letter.equals("x")){
+                        x++;
+                        positionX=i;
+                    }
+                    else if(letter.equals("y")){
+                        y++;
+                        positionY=i;
+                    }
                 }
+            }
+            if(positionX>positionY){
+                balance=false;
+            }
+            else if(y==0){
+                if(x==0){
+                    balance=true;
+                }
+                else{
+                    balance=false;
+                }
+            }
+            else{
+                balance=true;
             }
         }
         else{
@@ -218,7 +240,7 @@ public class StringLoops {
         }
         return balance;
     }
-//fix
+
     public static String plusOut(String str, String word) {
         String newword="";
         for(int i=0;i<str.length()-word.length()-1;i++){
@@ -231,7 +253,7 @@ public class StringLoops {
         }
         return newword;
     }
-//fix
+//finish plus out
     public static boolean catDog(String str) {
         int cat=0,dog=0;
         boolean equal=false;
