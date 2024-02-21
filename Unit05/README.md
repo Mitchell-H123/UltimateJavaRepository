@@ -40,7 +40,29 @@ preconditions=conditions must be true for the method to work
 
 ## 5.4 - Accessor Methods
 
+accessor methods allow safe access to instance vars
+
+referred as get methods or getters
+
+returns a copy of private vars
+
+must be public and no parameters
+
+toString method
+-returns a string with info about the instance vars
+-public String toString()
+-always returns a string
+-no parameters
+
 ## 5.5 - Mutator Methods
+
+allow the change of values for instance vars outside of the class
+often referred as set methods or setters
+if there is any need for a different class to modify the instance vars, mutator methods are necessary
+
+must be public
+retrun type must be void
+parameter must match the type of instance var
 
 ## 5.6 - Writing Methods
 
