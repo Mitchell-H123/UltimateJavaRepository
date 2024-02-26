@@ -66,7 +66,22 @@ parameter must match the type of instance var
 
 ## 5.6 - Writing Methods
 
+a method header consists of
+
+access level = set by an access modifier: public or private
+ownership = set by whether or not static is included
+return type = the data type of the value returned by the method, can be primitive, reference or void
+parameter list = enclosed in parentheses, states the data type and identifier for each parameter used in the method
+
 ## 5.7 - Static Variables and Methods
+
+static methods are associated with the class, not objects of the class
+
+static methods cannot access or change the values of instance vars
+
+static methods can access or change the values of static vars
+
+static vars are used with the class name and the dot operator, since they are associated with a class, not objects of a class
 
 ## 5.8 - Scope and Access
 
