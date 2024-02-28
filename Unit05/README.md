@@ -85,6 +85,19 @@ static vars are used with the class name and the dot operator, since they are as
 
 ## 5.8 - Scope and Access
 
+if u redeclare vars in a method or constructor it is a new local var instead of using a private or public var
+EX: private int num but then in a method or constructor declaring int num makes these 2 different vars
+
+local vars cannot be private or public
+
 ## 5.9 - `this` Keyword
+
+this is needed when wanting an instance var thats the same as a local var
+EX: this.dog=dog;
+-this.dog is the private var while dog is the local var
+
+within a non static method or a constructor the keyword this is a reference to the current object-the object whose method or constructor is being called
+
+the keyword this can be used to pass the current object as an actual parameter in a method call
 
 ## 5.10 - Ethical and Social Implications of Computing Systems
