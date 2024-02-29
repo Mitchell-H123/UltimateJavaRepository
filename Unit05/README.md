@@ -101,3 +101,6 @@ within a non static method or a constructor the keyword this is a reference to t
 the keyword this can be used to pass the current object as an actual parameter in a method call
 
 ## 5.10 - Ethical and Social Implications of Computing Systems
+
+use open source code
+use golden rule

@@ -5,3 +5,5 @@ public class Topic5_10EthicalAndSocialImplicationsOfComputingSystems {
         
     }
 }
+//no code for this section
+//just golden rule stuff
