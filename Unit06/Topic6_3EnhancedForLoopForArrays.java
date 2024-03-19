@@ -7,5 +7,11 @@ public class Topic6_3EnhancedForLoopForArrays {
             System.out.println(num);
         }
         System.out.println("finished");
+
+        String [] a={"abc","def"};
+        for(String i:a){
+            System.out.println(i);
+        }
+        System.out.println("finished");
     }
 }
