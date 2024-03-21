@@ -56,7 +56,19 @@ public static ArrayList<String> methodName(){
 
 ## 7.3 - Traversing `ArrayList`s
 
+traversing using for or a while loop you use .get(i) to get each element in the list
+not using [i] like in arrays
+
+in the loops you use arr.size() for the list's size not useing length()
+
+can use enhanced for loops also
+-set up is the same as arrays
+-makes a copy of each element and wont change the array list even tho the array list is a reference type
+-you cannot change or update an array lists with enhanced for loops
+
 ## 7.4 - Developing Algorithms Using `ArrayList`s
+
+can make algorithms to get a max or min value of an arraylist
 
 ## 7.5 - Searching
 
