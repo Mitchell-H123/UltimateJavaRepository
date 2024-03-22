@@ -72,6 +72,22 @@ can make algorithms to get a max or min value of an arraylist
 
 ## 7.5 - Searching
 
+searching is using a loop and an if statment to look for something in an array/arraylist
+-usually returning the index of the item
+
+with an int value use ==
+with a double value use math to make sure its close enough
+with object instances use the .equals()
+
+order can matter when searching
+-ex: when removing elements from an array list you want to go backwards in the loop to avoid missing an item due to the shifting of the array list once the one item is removed
+
+you can use enhanced for loops
+
 ## 7.6 - Sorting
+
+is used to swap items like going from smallest to largest
+
+cannot use enhanced for loops
 
 ## 7.7 - Ethical Issues Around Data Collection
