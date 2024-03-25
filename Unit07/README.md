@@ -91,3 +91,7 @@ is used to swap items like going from smallest to largest
 cannot use enhanced for loops
 
 ## 7.7 - Ethical Issues Around Data Collection
+
+if data is to be removed make sure it is removed
+
+insure personal privacy
