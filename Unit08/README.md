@@ -19,3 +19,5 @@ col length:
 dataType [][] name= new dataType[r][c]
 
 ## 8.2 - Transversing 2D Arrays
+
+use nested loops
