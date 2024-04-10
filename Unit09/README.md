@@ -30,12 +30,19 @@ constuctors are not inherited
 java inserts super(); automatically into constructors of subclasses if u dont and will go to the default no argument constructor
 -must be first line of constructor of the subclass
 -use super(); to connect certain subclass items to constuctors in the superclass
+-superclasses must have a constructor
 
 ## 9.3 - Overriding Methods
 
+override methods: a new and different implementation of a method that already exists in the superclass
 
+the method in the subclass with the same name as one in the superclass will override the superclass one
 
 ## 9.4 - super Keyword
+
+use super.method(); to call superclass methods that are overrided
+
+ex: super.perform();
 
 ## 9.5 - Creating References Using Inheritance Hierarchies
 
