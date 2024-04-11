@@ -46,6 +46,17 @@ ex: super.perform();
 
 ## 9.5 - Creating References Using Inheritance Hierarchies
 
+can create arrays with using classes
+ex: utensil ---> pen ---> gelpen
+utensil [] case=new utensil[3];
+case[0]= new pen();
+case[1]= new gelpen();
+
 ## 9.6 - Polymorphism
+
+a reference var is polymorphic when it can refer to objects from different classes at different points in the code
+
+you can down cast objects from the superclass to the subclass to have access to certain methods
+((new class)name).method();
 
 ## 9.7 - Object Superclass
