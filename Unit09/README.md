@@ -60,3 +60,25 @@ you can down cast objects from the superclass to the subclass to have access to 
 ((new class)name).method();
 
 ## 9.7 - Object Superclass
+
+the object class is the superclass of all other classes in java
+object class is part of the java.lang package
+
+java has every class be extended from the Object class automatically
+
+toString() is inherited from object and is called whenever print() is used
+-can be overiden in other classes and will print that overriden version when something of that class is put into print
+
+public String toString(){
+        return ////;
+    }
+
+.equals() is inherited from the object class
+-classes can override equals
+-must have a var of Object and downcast it
+
+public boolean equals(Object other){
+        Class that=(Class)other;
+        return this.size==that.size;
+    }
+
