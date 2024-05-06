@@ -22,28 +22,28 @@ public class rpg_class {
             typenum=x;
             type="Archer";
             attack=30;
-            hp=20;
+            hp=70;
         }
         else if(x==2){
             typenum=x;
             type="Knight";
             attack=20;
-            hp=30;
+            hp=80;
         }
         else if(x==3){
             typenum=x;
             type="Mage";
             attack=45;
-            hp=10;
+            hp=60;
         }
         else{
             typenum=4;
             type="Thief";
             attack=15;
-            hp=45;
+            hp=95;
         }
     }
-    //fire>ice>earth>lightning
+    
     public void setelement(int x){
         if(x==1){
             elementnum=x;
@@ -98,5 +98,8 @@ public class rpg_class {
     }
     public void heal(double amt){
         hp=hp+amt;
+    }
+    public void upgrade(int x){
+        attack+=x;
     }
 }
