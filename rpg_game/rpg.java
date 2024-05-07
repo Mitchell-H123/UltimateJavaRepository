@@ -56,21 +56,33 @@ public class rpg {
                         System.out.println(e.getEname()+" attacked "+p1.getname());
                         p1.hurt(e.getEattack());
                         turn++;
+                        if(p1.alive()==false&&p2.alive()==false&&p3.alive()==false&&p4.alive()==false){
+                            break;
+                        }
                     }
                     else if(e_choice==2){
                         System.out.println(e.getEname()+" attacked "+p2.getname());
                         p2.hurt(e.getEattack());
                         turn++;
+                        if(p1.alive()==false&&p2.alive()==false&&p3.alive()==false&&p4.alive()==false){
+                            break;
+                        }
                     }
                     else if(e_choice==3){
                         System.out.println(e.getEname()+" attacked "+p3.getname());
                         p3.hurt(e.getEattack());
                         turn++;
+                        if(p1.alive()==false&&p2.alive()==false&&p3.alive()==false&&p4.alive()==false){
+                            break;
+                        }
                     }
                     else{
                         System.out.println(e.getEname()+" attacked "+p4.getname());
                         p4.hurt(e.getEattack());
                         turn++;
+                        if(p1.alive()==false&&p2.alive()==false&&p3.alive()==false&&p4.alive()==false){
+                            break;
+                        }
                     }
                     
                 }
@@ -180,4 +192,3 @@ public class rpg {
     }
 }
 
-//infinit loop when game ends (FIX)
