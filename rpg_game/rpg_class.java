@@ -22,25 +22,25 @@ public class rpg_class {
             typenum=x;
             type="Archer";
             attack=30;
-            hp=70;
+            hp=50;
         }
         else if(x==2){
             typenum=x;
             type="Knight";
             attack=20;
-            hp=80;
+            hp=60;
         }
         else if(x==3){
             typenum=x;
             type="Mage";
             attack=45;
-            hp=60;
+            hp=40;
         }
         else{
             typenum=4;
             type="Thief";
             attack=15;
-            hp=95;
+            hp=75;
         }
     }
     

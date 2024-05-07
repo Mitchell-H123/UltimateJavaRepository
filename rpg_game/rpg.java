@@ -10,7 +10,7 @@ public class rpg {
         rpg_class p3= new rpg_class();
         rpg_class p4= new rpg_class();
         int score=0;
-        int turn=0;
+        int turn=1;
 
         System.out.println("Enter the first characters name:");
         p1.setname(s.next());
@@ -55,12 +55,24 @@ public class rpg {
                     if(e_choice==1){
                         System.out.println(e.getEname()+" attacked "+p1.getname());
                         p1.hurt(e.getEattack());
+                        turn++;
                     }
                     else if(e_choice==2){
                         System.out.println(e.getEname()+" attacked "+p2.getname());
                         p2.hurt(e.getEattack());
+                        turn++;
                     }
-                    /////////////////////////////FINISH ENEMY ATTACK
+                    else if(e_choice==3){
+                        System.out.println(e.getEname()+" attacked "+p3.getname());
+                        p3.hurt(e.getEattack());
+                        turn++;
+                    }
+                    else{
+                        System.out.println(e.getEname()+" attacked "+p4.getname());
+                        p4.hurt(e.getEattack());
+                        turn++;
+                    }
+                    
                 }
                 else if(turn==1){
                     if(p1.alive()==true){
@@ -164,6 +176,8 @@ public class rpg {
                 }
             }while(e.Ealive());
         }while(p1.alive()||p2.alive()||p3.alive()||p4.alive());
-
+        System.out.println("\nFINAL SCORE: "+score);
     }
 }
+
+//infinit loop when game ends (FIX)
